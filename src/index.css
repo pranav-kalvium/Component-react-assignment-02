@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,72 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f3f3f3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: beige;
+}
+
+.app {
+  width: 60%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* PostCard Styling */
+.post-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.post-content {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Like Button */
+.like-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.like-button:hover {
+  background-color: #f0f0f0;
+}
+
+.liked {
+  color: red;
+  border-color: red;
 }
